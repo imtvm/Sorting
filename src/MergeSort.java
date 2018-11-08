@@ -9,36 +9,26 @@ public class MergeSort {
         i=j=k=0;
 
         while(i < a.length && j < b.length){
-
             if (a[i] <= b[j]){
-
                 merged[k] = a[i];
                 i++;
                 k++;
-
             }else{
-
                 merged[k] = b[j];
                 j++;
                 k++;
-
             }
         }
         while (i < a.length){
-
             merged[k] = a[i];
             i++;
             k++;
-
         }
         while (j < b.length){
-
             merged[k] = b[j];
             j++;
             k++;
-
         }
-
         return merged;
     }
 
